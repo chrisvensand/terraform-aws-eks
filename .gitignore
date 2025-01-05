@@ -1,0 +1,33 @@
+# Ignore Terraform files
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+
+# Ignore sensitive variable files
+*.tfvars
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore IDE and system files
+.idea/
+.DS_Store
+
+# Ignore specific files from the provided snippets
+eks-admin-cluster-role-binding.yaml
+eks-admin-service-account.yaml
+config-map-aws-auth*.yaml
+kubeconfig_*
+
+# Ignore PEM and shell script files in specific directories
+*.pem
+*.sh
